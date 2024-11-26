@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Avatar Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/avatarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Top Left Avatar -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_yellow"
+            android:padding="4dp"
+            android:src="@drawable/simg_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.2"
+            app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+        <!-- Top Right Avatar -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_green"
+            android:padding="4dp"
+            android:src="@drawable/simg_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.2"
+            app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+        <!-- Middle Left Avatar -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_purple_light"
+            android:padding="4dp"
+            android:src="@drawable/simg_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+        <!-- Center Avatar (Larger) -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarCenter"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/circle_purple"
+            android:padding="4dp"
+            android:src="@drawable/simg_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+        <!-- Middle Right Avatar -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_pink"
+            android:padding="4dp"
+            android:src="@drawable/simg_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+        <!-- Bottom Left Avatar -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_yellow"
+            android:padding="4dp"
+            android:src="@drawable/simg_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.8"
+            app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+        <!-- Bottom Right Avatar -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_blue_light"
+            android:padding="4dp"
+            android:src="@drawable/simg_7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.8"
+            app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Text Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect &amp; grow"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="with"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AlumNet"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lets make difference together"
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Start using now"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            app:cornerRadius="24dp"
+            android:backgroundTint="@color/brand_blue"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
