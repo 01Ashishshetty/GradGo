@@ -1,4 +1,4 @@
-package com.example.yourapp
+package com.example.gradgo
 
 import android.content.Intent
 import android.os.Bundle
